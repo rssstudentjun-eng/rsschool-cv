@@ -1,0 +1,55 @@
+.container {
+    max-width: 1240px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header {
+
+}
+
+.headerNavList {
+    display: flex;
+    gap: 48px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.headerNavItem {
+}
+
+.headerNavLink {
+    font-family: 'Raleway', 'sans-serif';
+    font-weight: 600;
+    line-height: 28px;
+    color: black;
+    font-size: 30px;
+    position: relative;
+
+    &::after {
+        position: absolute;
+        content: '';
+        bottom: 0;
+        display: block;
+        width: 0;
+        transition: width 0.3s ease;
+        height: 2px;
+        background: black;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &:hover:after {
+        width: 100%;
+    }
+}
+
+.footerGitLink {
+
+}
+
+.main {
+}
+
+.footer {
+}
