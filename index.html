@@ -24,7 +24,7 @@
                     <li><a href="#footer">Bottom Section</a></li>
                 </ul>
             </nav>
-            <h1 class="name">Dzmitry</h1>
+            <h1 class="name">Dzmitry Petrov</h1>
             <p class="profession">Junior Front-End Developer</p>
             <ul class="contactsHeaderList">
                 <li>
@@ -76,10 +76,14 @@
                 </section>
                 <section class="projectsBlock infoBlock">
                     <h2>Educational projects</h2>
-                    <a target="_blank" class="projectLink" href="https://tmdb-movie-search-zeta.vercel.app/">
-                        <img class="projectImage" src="./assets/img/tmdb_picture.png" alt="projectImage">
-                        <span class="projectLinkLabel">View project</span>
-                    </a>
+                    <ul>
+                        <li>
+                            <a target="_blank" class="projectLink" href="https://tmdb-movie-search-zeta.vercel.app/">
+                                <img class="projectImage" src="./assets/img/tmdb_picture.png" alt="projectImage">
+                                <span class="projectLinkLabel">View project</span>
+                            </a>
+                        </li>
+                    </ul>
                 </section>
                 <section class="languagesBlock infoBlock">
                     <h2>Languages</h2>
@@ -111,7 +115,7 @@ let t1s = team1.reduce((acc, item) => {
 return acc + item}, 0);
 let t2s = team2.reduce((acc, item) => {
 return acc + item}, 0);
-if (t1s === t2s || t2s > t1s) return false;
+if (t1s === t2s || t2s &gt; t1s) return false;
 else return true;
 }</code></pre>
                 </section>
