@@ -48,9 +48,6 @@ body {
     padding: 12px 20px;
 }
 
-.menuItem {
-}
-
 .headerContainer {
     background: var(--color-sage);
     border-top-right-radius: 220px;
@@ -244,7 +241,6 @@ h2 {
 }
 
 /*Footer styles*/
-
 .footerContainer {
     background: var(--color-sage);
     border-top-right-radius: 220px;
