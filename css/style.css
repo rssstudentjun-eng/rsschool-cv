@@ -1,14 +1,4 @@
-.container {
-    max-width: 1240px;
-    margin: 0 auto;
-}
-
-body {
-    font-family: "Lato", sans-serif;
-    color: var(--color-white);
-    font-size: var(--text-size);
-}
-
+/*Common styles*/
 :root {
     --color-dark-green: #3d4434;
     --color-sage: #8b9583;
@@ -26,16 +16,41 @@ body {
     --normal-font-weight: 400;
 }
 
-.hidden-element {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    clip-path: inset(50%);
-    white-space: nowrap;
+html {
+    scroll-behavior: smooth;
 }
 
-/*Header*/
+body {
+    font-family: "Lato", sans-serif;
+    color: var(--color-white);
+    font-size: var(--text-size);
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+/*Header styles*/
+.navMenu {
+    background-color: var(--color-dark-green);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.menuList {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 12px 20px;
+}
+
+.menuItem {
+}
+
 .headerContainer {
     background: var(--color-sage);
     border-top-right-radius: 220px;
@@ -44,6 +59,7 @@ body {
     justify-content: space-between;
     padding: 20px 30px 20px 30px;
     flex-wrap: wrap;
+    margin-top: 40px;
 }
 
 .infoHeaderBlock {
@@ -51,16 +67,18 @@ body {
 }
 
 .userPhoto {
+    border: solid 10px var(--color-white);
     border-radius: 50%;
     width: 250px;
     height: 250px;
-    border: solid 10px var(--color-white);
-    display: inline-block;
+    display: block;
+    object-fit: cover;
+    max-width: 100%;
 }
 
 .name {
-    font-size: 44px;
     font-weight: var(--biggest-font-weight);
+    font-size: 44px;
     margin-bottom: 15px;
 }
 
@@ -106,12 +124,8 @@ body {
     overflow-wrap: anywhere;
 }
 
-/*Main*/
-.main {
-
-}
-
-.infoSection {
+/*Main styles*/
+.mainBlock {
     display: flex;
 }
 
@@ -176,7 +190,6 @@ h2 {
 }
 
 .projectImage {
-    height: 400px;
     display: block;
     width: 100%;
     transition: transform 0.25s ease, filter 0.25s ease;
@@ -212,11 +225,17 @@ h2 {
 }
 
 .codeBlock {
-    width: fit-content;
+    width: 100%;
     max-width: 100%;
     margin: 0;
     padding: 16px;
-    overflow-x: auto;
+    overflow-x: hidden;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+.codeBlock code {
+    white-space: inherit;
 }
 
 .languagesBlock p {
@@ -224,10 +243,7 @@ h2 {
     margin-bottom: 30px;
 }
 
-/*footer*/
-
-.footer {
-}
+/*Footer styles*/
 
 .footerContainer {
     background: var(--color-sage);
@@ -239,12 +255,16 @@ h2 {
     padding: 20px;
 }
 
+.footerContainer p {
+    font-size: var(--middle-text-size);
+    font-weight: var(--biggest-font-weight);
+}
+
 .courseLogo {
     width: 50px;
 }
 
-
-/*media*/
+/*Media*/
 @media (max-width: 768px) {
     .contactsHeaderList {
         margin-bottom: 20px;
@@ -258,7 +278,7 @@ h2 {
         margin-top: 0;
     }
 
-    .infoSection {
+    .mainBlock {
         flex-direction: column;
         gap: 20px;
     }
@@ -270,6 +290,10 @@ h2 {
 }
 
 @media (max-width: 576px) {
+    .navMenu {
+        display: none;
+    }
+
     .footerContainer {
         flex-direction: column;
         gap: 10px;
@@ -279,3 +303,7 @@ h2 {
         margin-bottom: 0;
     }
 }
+
+
+
+

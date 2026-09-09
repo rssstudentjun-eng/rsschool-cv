@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="./assets/img/cv.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,14 +14,21 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-<header class="header">
+<header id="header">
     <div class="container headerContainer">
-        <h1 class="hidden-element">Front-End CV</h1>
         <div class="infoHeaderBlock">
-            <p class="name">Dzmitry</p>
+            <nav class="navMenu">
+                <ul class="menuList">
+                    <li><a href="#header">Top Section</a></li>
+                    <li><a href="#main">Main Section</a></li>
+                    <li><a href="#footer">Bottom Section</a></li>
+                </ul>
+            </nav>
+            <h1 class="name">Dzmitry</h1>
             <p class="profession">Junior Front-End Developer</p>
-            <div class="contactsHeaderList">
-                <a target="_blank" class="headerContactItem" href="mailto:rss.student.jun@gmail.com">
+            <ul class="contactsHeaderList">
+                <li>
+                    <a target="_blank" class="headerContactItem" href="mailto:rss.student.jun@gmail.com">
                     <span class="iconWrap">
                     <svg class="itemIcon" viewBox="0 0 42 33">
                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -30,26 +36,27 @@
                               fill="currentColor"/>
                     </svg>
                     </span>
-                    <span class="contactItemDesc">rss.student.jun@gmail.com</span>
-                </a>
-                <div class="headerContactItem">
+                        <span class="contactItemDesc">rss.student.jun@gmail.com</span>
+                    </a>
+                </li>
+                <li class="headerContactItem">
                     <span class="iconWrap">
                     <svg class="itemIcon" fill="currentColor" viewBox="0 0 16 16">
                         <path d="M13.545 2.907a13.2 13.2 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.2 12.2 0 0 0-3.658 0 8 8 0 0 0-.412-.833.05.05 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.04.04 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032q.003.022.021.037a13.3 13.3 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019q.463-.63.818-1.329a.05.05 0 0 0-.01-.059l-.018-.011a9 9 0 0 1-1.248-.595.05.05 0 0 1-.02-.066l.015-.019q.127-.095.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.05.05 0 0 1 .053.007q.121.1.248.195a.05.05 0 0 1-.004.085 8 8 0 0 1-1.249.594.05.05 0 0 0-.03.03.05.05 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.2 13.2 0 0 0 4.001-2.02.05.05 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.03.03 0 0 0-.02-.019m-8.198 7.307c-.789 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612"/>
                     </svg>
                     </span>
-                    <p class="contactItemDesc">NickName: student_jun(@rssstudentjun-eng)</p>
-                </div>
-            </div>
+                    <span class="contactItemDesc">NickName: student_jun(@rssstudentjun-eng)</span>
+                </li>
+            </ul>
         </div>
         <img class="userPhoto" src="./assets/img/user_photo.jpg" alt="personalPhoto">
     </div>
 </header>
-<main class="main">
+<main id="main">
     <div class="container">
-        <section class="infoSection">
+        <div class="mainBlock">
             <div class="infoLeftBlock">
-                <div class="profileInfoBlock infoBlock">
+                <section class="profileInfoBlock infoBlock">
                     <h2>Profile</h2>
                     <p class="profileDesc">
                         Junior Front-End Developer with experience working in a commercial development team.
@@ -62,25 +69,25 @@
                         junior front-end role where I can contribute to a real product, improve my skills,
                         and keep growing as a software developer.
                     </p>
-                </div>
-                <div class="educationBlock infoBlock">
+                </section>
+                <section class="educationBlock infoBlock">
                     <h2>Education</h2>
                     <p>BNTU (Belarusian National Technical University) 2007-2011</p>
-                </div>
-                <div class="projectsBlock infoBlock">
+                </section>
+                <section class="projectsBlock infoBlock">
                     <h2>Educational projects</h2>
                     <a target="_blank" class="projectLink" href="https://tmdb-movie-search-zeta.vercel.app/">
                         <img class="projectImage" src="./assets/img/tmdb_picture.png" alt="projectImage">
                         <span class="projectLinkLabel">View project</span>
                     </a>
-                </div>
-                <div class="languagesBlock infoBlock">
+                </section>
+                <section class="languagesBlock infoBlock">
                     <h2>Languages</h2>
                     <p>English-B1</p>
-                </div>
+                </section>
             </div>
             <div class="infoRightBlock">
-                <div class="infoBlock">
+                <section class="infoBlock">
                     <h2>Skills</h2>
                     <ul>
                         <li>HTML5</li>
@@ -96,27 +103,23 @@
                         <li>Responsive and adaptive layout</li>
                         <li>Working with reusable UI components</li>
                     </ul>
-                </div>
-                <div class="infoBlock">
+                </section>
+                <section class="infoBlock">
                     <h2>Code example</h2>
-                    <pre class="codeBlock">
-                    <code>
-function calculateTotal(team1, team2) {
+                    <pre class="codeBlock"><code>function calculateTotal(team1, team2) {
 let t1s = team1.reduce((acc, item) => {
-return acc + item},0);
+return acc + item}, 0);
 let t2s = team2.reduce((acc, item) => {
 return acc + item}, 0);
-if(t1s === t2s || t2s > t1s) return false
+if (t1s === t2s || t2s > t1s) return false;
 else return true;
-}
-                    </code>
-                    </pre>
-                </div>
+}</code></pre>
+                </section>
             </div>
-        </section>
+        </div>
     </div>
 </main>
-<footer class="footer">
+<footer id="footer">
     <div class="container footerContainer">
         <a target="_blank" class="headerContactItem" href="https://github.com/rssstudentjun-eng">
                     <span class="iconWrap">
